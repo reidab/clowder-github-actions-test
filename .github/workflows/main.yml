@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/setup-python@v2
       with:
+        python-version: '3.x'
     - name: Install Clowder
       run: pip install clowder-repo
-      python-version: '3.x'
     - run: clowder init https://github.com/jrgoodle/cats.git
